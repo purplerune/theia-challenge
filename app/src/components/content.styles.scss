@@ -1,0 +1,78 @@
+.hero.is-dark {
+  background-color: #0c111f !important;
+}
+
+.card, .custom-card, .chart-card {
+  background-color: #121729 !important;
+}
+
+.custom-card {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem !important;
+
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  transition: 250ms;
+
+  &:hover {
+    transition: 250ms;
+    transform: scale(1.0125);
+  }
+
+  .icon-container {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .card-content {
+    p {
+      text-align: left;
+    }
+  }
+
+  p.subtitle {
+    margin-top: -1rem !important;
+  }
+}
+
+.chart-card {
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem !important;
+}
+
+.fair-params {
+  .custom-card {
+    position: relative;
+    svg {
+      width: 1rem;
+      height: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    flex-direction: column;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      svg {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.25rem;
+      }
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+}
